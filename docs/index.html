@@ -2,222 +2,368 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Company Name" />
+
   <title>Company Name | Professional Digital Solutions</title>
   <meta
     name="description"
     content="We help businesses build fast, modern, and professional websites that grow their online presence."
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Styles -->
 
-  <link rel="icon" href="/company_profile_project/favicon.svg" type="image/svg+xml" />
-  <link rel="alternate icon" href="/favicon.ico" />
-  <link rel="stylesheet" crossorigin href="/company_profile_project/assets/index-DJlQ0wm8.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/company_profile_project/logo.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="stylesheet" crossorigin href="/company_profile_project/assets/index-CgsfpRYy.css">
 </head>
+
 <body>
-
+  <div id="top"></div>
   <!-- Header -->
-  <header class="site-header" id="site-header">
+  <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo">Company Name</a>
 
-      <nav class="nav" id="nav-menu">
+      <!-- Brand -->
+      <a href="#top" class="logo" aria-label="Go to homepage">
+        <img
+          src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%200C25.3043%204.00466e-07%2030.3919%202.10669%2034.1426%205.85742C34.8157%206.53058%2035.4354%207.24719%2036%208H20C16.8174%208%2013.7651%209.26421%2011.5146%2011.5146C9.26421%2013.7651%208%2016.8174%208%2020H20L36.9102%209.31934C38.1656%2011.3074%2039.0611%2013.5027%2039.5547%2015.8027L32%2020H40L39.9941%2020.4971C39.8669%2025.6213%2037.776%2030.5092%2034.1426%2034.1426C30.3919%2037.8933%2025.3043%2040%2020%2040C14.6957%2040%209.60815%2037.8933%205.85742%2034.1426C5.18426%2033.4694%204.56459%2032.7528%204%2032H20C23.1826%2032%2026.2349%2030.7358%2028.4854%2028.4854C30.5952%2026.3755%2031.8383%2023.5608%2031.9854%2020.5947L32%2020H20L3.08984%2030.6787C1.83452%2028.6906%200.941002%2026.4951%200.447266%2024.1953L8%2020H0C8.00931e-07%2014.6957%202.1067%209.60815%205.85742%205.85742C9.60815%202.1067%2014.6957%20-5.79361e-10%2020%200Z'%20fill='%230094F7'%3e%3c/path%3e%3c/svg%3e"
+          alt="Company Name logo"
+          width="32"
+          height="32"
+        />
+        <span class="logo-text">Company Name</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav
+        class="nav"
+        id="nav-menu"
+        aria-label="Primary navigation"
+      >
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contact Us</a>
       </nav>
 
+      <!-- Mobile toggle -->
       <button
         class="nav-toggle"
         id="nav-toggle"
-        aria-label="Toggle navigation"
+        aria-label="Toggle navigation menu"
         aria-expanded="false"
+        aria-controls="nav-menu"
       >
         ☰
       </button>
+
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1>Build Your Company Presence</h1>
-        <p>
-          We design clean, professional websites that help your business
-          stand out and grow online.
-        </p>
-        <a href="#contact" class="btn-primary">Get in Touch</a>
-      </div>
+  <!-- Mobile overlay (NEW) -->
+  <div class="nav-overlay" id="nav-overlay"></div>
 
-      <div class="hero-image">
-        <img
-          src="/company_profile_project/assets/hero-CpAmEByd.png"
-          alt="Professional company website illustration"
-          loading="lazy"
-        />
-      </div>
-    </div>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>
+            A Professional Website That
+            <span class="highlight">Builds Trust</span>
+          </h1>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-image">
-        <img src="/company_profile_project/assets/about-CJfd55Qs.png" alt="About our company" />
-      </div>
-
-      <div class="about-text">
-        <h2>About Us</h2>
-        <p>
-          We help businesses establish a strong and credible online presence
-          through modern, reliable digital solutions.
-        </p>
-        <p>
-          Our focus is on clarity, performance, and long-term maintainability,
-          so your website grows together with your business.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="section section-light">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Services</h2>
-        <p>
-          We provide practical, reliable solutions tailored to your business
-          needs.
-        </p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Company Profile Website</h3>
           <p>
-            Modern, responsive company websites designed to build trust and
-            credibility online.
+            We help businesses launch professional company websites that clearly
+            explain what they do, build credibility, and convert visitors into
+            genuine enquiries.
           </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary btn-large">
+              Get a Free Consultation →
+            </a>
+            <a href="#services" class="btn-secondary">
+              See How We Can Help
+            </a>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3>Custom Web Development</h3>
-          <p>
-            Tailored web solutions built to match your unique business workflows
-            and goals.
-          </p>
+        <div class="hero-image">
+          <img
+            src="/company_profile_project/assets/hero-CpAmEByd.png"
+            alt="Professional company website illustration"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section fade-in">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="/company_profile_project/assets/about-CJfd55Qs.png"
+            alt="About our company"
+            loading="lazy"
+          />
         </div>
 
-        <div class="service-card">
-          <h3>Consultation & Support</h3>
+        <div class="about-text">
+          <h2>About Our Company</h2>
+
           <p>
-            Technical guidance and ongoing support to help your business grow
-            with confidence.
+            We help businesses establish a strong and credible online presence
+            through clean design, clear messaging, and reliable technology.
+          </p>
+
+          <p>
+            Our focus is on building company websites that are easy to understand,
+            fast to load, and designed to grow together with your business.
+          </p>
+
+          <p>
+            Whether you are a startup or an established company, we work closely
+            with you to deliver a website that reflects your brand and supports
+            your business goals.
           </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <div class="container cta-box">
-      <div class="cta-text">
-        <h2>Ready to Grow Your Business Online?</h2>
-        <p>
-          Let’s discuss how we can help you build a professional and effective
-          online presence.
-        </p>
-      </div>
+    <div class="section-divider"></div>
 
-      <div class="cta-action">
-        <a href="#contact" class="btn-primary btn-large">
-          Contact Us
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container contact-grid">
-      <div class="contact-text">
-        <h2>Contact Us</h2>
-        <p>
-          Have a project in mind or want to learn more?
-          Send us a message and we’ll get back to you shortly.
-        </p>
-
-        <p><strong>Email:</strong> contact@company.com</p>
-        <p><strong>Phone:</strong> +60 12-345 6789</p>
-      </div>
-
-      <form
-        id="contact-form"
-        class="contact-form"
-        action="https://formspree.io/f/mqezzorp"
-        method="POST"
-      >
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
+    <!-- Services -->
+    <section id="services" class="section section-light fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>
+            Structured, well-designed company websites that support credibility,
+            compliance, and long-term business objectives.
+          </p>
         </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🧩</div>
+            <h3>Company Profile Website</h3>
+            <p>
+              A clean, professional website that clearly presents your company,
+              services, and contact information — ideal for building trust with
+              potential customers.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Custom Web Development</h3>
+            <p>
+              Tailored website features and layouts designed around your business
+              needs, ensuring flexibility as your company grows.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>Consultation & Support</h3>
+            <p>
+              Clear guidance, technical advice, and ongoing support to help you
+              make the right digital decisions with confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-light fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+          <p>
+            We work closely with our clients to deliver websites they feel
+            confident presenting to their customers.
+          </p>
         </div>
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="services-grid">
+          <div class="service-card">
+            <p>
+              “The website looks clean, professional, and clearly communicates
+              our services. The process was smooth from start to finish.”
+            </p>
+            <span class="testimonial-author">— Business Owner</span>
+          </div>
+
+          <div class="service-card">
+            <p>
+              “We appreciated the clear communication and fast turnaround.
+              Everything was explained in a way that was easy to understand.”
+            </p>
+            <span class="testimonial-author">Operations Manager</span>
+          </div>
+
+          <div class="service-card">
+            <p>
+              “A reliable partner who understands what businesses need in a
+              professional website. Highly recommended.”
+            </p>
+            <span class="testimonial-author">Managing Director</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta fade-in">
+      <div class="container cta-box">
+        <div class="cta-text">
+          <h2>Ready to Grow Your Business Online?</h2>
+          <p>
+            Let’s discuss how we can help you build a clear, professional online
+            presence that supports your business goals.
+          </p>
         </div>
 
-        <button type="submit" class="btn-primary" id="submit-btn">
-          <span class="btn-text">Send Message</span>
-          <span class="spinner" aria-hidden="true"></span>
-        </button>
+        <div class="cta-action">
+          <a href="#contact" class="btn-primary btn-large">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <p id="form-status" class="form-status"></p>
-      </form>
-    </div>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="section fade-in">
+      <div class="container contact-grid">
+        <div class="contact-text">
+          <h2>Contact Us</h2>
+
+          <p>
+            Have a project in mind or need a professional company website?
+            Tell us a little about your business and we’ll get back to you shortly.
+          </p>
+
+          <p>
+            There’s no obligation — just a friendly discussion to understand
+            your needs and see how we can help.
+          </p>
+
+          <p><strong>Email:</strong> contact@company.com</p>
+          <p><strong>Phone:</strong> +60 12-345 6789</p>
+        </div>
+
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formspree.io/f/mqezzorp"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">How can we help?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Briefly describe your project or requirements"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" id="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <!-- Company -->
-      <div class="footer-col">
-        <h4>Company Name</h4>
-        <p>
+      <div class="footer-col footer-brand">
+        <a href="#top" class="footer-logo">
+          <img
+            src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%200C25.3043%204.00466e-07%2030.3919%202.10669%2034.1426%205.85742C34.8157%206.53058%2035.4354%207.24719%2036%208H20C16.8174%208%2013.7651%209.26421%2011.5146%2011.5146C9.26421%2013.7651%208%2016.8174%208%2020H20L36.9102%209.31934C38.1656%2011.3074%2039.0611%2013.5027%2039.5547%2015.8027L32%2020H40L39.9941%2020.4971C39.8669%2025.6213%2037.776%2030.5092%2034.1426%2034.1426C30.3919%2037.8933%2025.3043%2040%2020%2040C14.6957%2040%209.60815%2037.8933%205.85742%2034.1426C5.18426%2033.4694%204.56459%2032.7528%204%2032H20C23.1826%2032%2026.2349%2030.7358%2028.4854%2028.4854C30.5952%2026.3755%2031.8383%2023.5608%2031.9854%2020.5947L32%2020H20L3.08984%2030.6787C1.83452%2028.6906%200.941002%2026.4951%200.447266%2024.1953L8%2020H0C8.00931e-07%2014.6957%202.1067%209.60815%205.85742%205.85742C9.60815%202.1067%2014.6957%20-5.79361e-10%2020%200Z'%20fill='%230094F7'%3e%3c/path%3e%3c/svg%3e"
+            alt="Company Name logo"
+            width="120"
+            height="28"
+          />
+        </a>
+
+        <p class="brand-name">Company Name</p>
+
+        <p class="brand-desc">
           We help businesses build a strong and professional online presence
           through modern, reliable digital solutions.
         </p>
       </div>
 
-      <!-- Quick Links -->
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h5 class="footer-title">Explore</h5>
         <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#contact">Get in Touch</a></li>
         </ul>
       </div>
 
-      <!-- Contact -->
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p>Email: contact@company.com</p>
-        <p>Phone: +60 12-345 6789</p>
-        <p>Location: Kuala Lumpur, Malaysia</p>
+        <h5 class="footer-title">Contact</h5>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:contact@company.com">contact@company.com</a>
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+          <a href="tel:+60123456789">+60 12-345 6789</a>
+        </p>
+
+        <p>
+          <strong>Location:</strong><br />
+          Kuala Lumpur, Malaysia
+        </p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      © <span id="year"></span> Company Name. All rights reserved.
+      <p class="footer-note">
+        Serving clients across Malaysia • Responsive support • Secure forms
+      </p>
+      <p>
+        © <span id="year"></span> Company Name.
+        <span class="footer-note">All rights reserved.</span>
+      </p>
     </div>
   </footer>
 
